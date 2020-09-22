@@ -38,7 +38,7 @@ window.renderStatistics = function (ctx, names, times) {
 
   let maxTime = Math.max.apply(null, times);
 
-  for (var i = 0; i < names.length; i++) {
+  for (let i = 0; i < names.length; i++) {
 
     // вычисляем высоту стобца взависимости от очков
     let barHeight = (MAX_BAR_HEIGHT * times[i]) / maxTime;
