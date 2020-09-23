@@ -36,15 +36,15 @@ window.renderStatistics = function (ctx, names, times) {
       '#fff'
   );
 
-  let maxTime = Math.max.apply(null, times);
+  const maxTime = Math.max.apply(null, times);
 
   for (let i = 0; i < names.length; i++) {
 
     // вычисляем высоту стобца взависимости от очков
-    let barHeight = (MAX_BAR_HEIGHT * times[i]) / maxTime;
+    const barHeight = (MAX_BAR_HEIGHT * times[i]) / maxTime;
 
     // вычисляем стартовую точку для оси Х
-    let xStartPosition = CLOUD_X + COLUMN_WIDTH + (COLUMN_WIDTH + COLUMNS_GAP) * i;
+    const xStartPosition = CLOUD_X + COLUMN_WIDTH + (COLUMN_WIDTH + COLUMNS_GAP) * i;
 
     // рисуем имя
     ctx.fillStyle = '#242424';
