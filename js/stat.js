@@ -64,7 +64,7 @@ window.renderStatistics = function (ctx, names, times) {
     if (names[i] === 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
     } else {
-      let scoreSaturation = Math.random() * (100 - 10) + 10;
+      const scoreSaturation = Math.random() * (100 - 10) + 10;
       ctx.fillStyle = 'hsl(227, ' + scoreSaturation + '%, 50%)';
     }
 
